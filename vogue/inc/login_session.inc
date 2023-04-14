@@ -92,6 +92,11 @@ session_start();
                   `
                     
                 );
+
+                // 관리자 페이지 링크설정
+                $(".sns a").last()
+                .click(()=>location.href="./admin/");
+
         } /////////// if /////////////////
 
 
@@ -108,14 +113,16 @@ session_start();
       // 2. 로그인 박스 CSS 디자인하기
       $("#loginMsg").css({
           position: "absolute",
-          width: "400px",
+          width: "auto",
           top: "5%",
           left: "50%",
           transform: "translateX(-50%)",
           fontSize: "14px",
           fontWeight: "bold",
           textAlign: "center",
-          whiteSpace: "nowrap"
+          whiteSpace: "nowrap",
+          zIndex:-1
+
       }); ////// css //////////
 
 
