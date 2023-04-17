@@ -1,0 +1,8 @@
+@charset "utg-8";
+
+/* Vogue PJ sub page css - temp.css */
+
+/* 외부CSS파일 합치기 */
+@import url(./core.css);
+@import url(./reset.css);
+@import url(./common.css);
